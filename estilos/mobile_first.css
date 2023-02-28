@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+Verde: #49a09d;
+Lilás: #5f2c82
+Azul: #283d8fba;
+Branco: #f3f3f3;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /*Fazer com que a caixa do formulário faça parte do calculo da responsividade da tela*/
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../midias/imagem/imagem\ login\ G.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    /*Fazer a tela ficar centralizada*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*Tudo que tiver fora da borda vai ficar com canto arredondado*/
+    overflow: hidden;
+
+    /*Dimensões da tela de login*/
+    background-color: #f3f3f3;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+
+    /*Inseriri um sombreamento na borda*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+
+/*Inserindo a imagem de enfeite dentro da tela de login*/
+section#login > div#imagem{
+    display: block;
+    background: #283d8fba url(../midias/imagem/tela\ login\ P.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+
+
