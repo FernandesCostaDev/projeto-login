@@ -13,14 +13,15 @@ Grandes telas: Acima de 1200px;
 
     /*Fazer o tamanho da saction ficar com 80% da largura da tela*/
     section#login{
-        width: 80vw;        
+        width: 500px;
+        height: 280px;
     }
 
     section#login > div#imagem{  
        background-image: url(../midias/imagem/chave_vertical_P.png);
        background-repeat: no-repeat;
        background-size: contain;
-       float: left;      
+       float: left;             
        width: 30%;
        height: 100%;
        
@@ -29,27 +30,43 @@ Grandes telas: Acima de 1200px;
     section#login > div#formulario{ 
         /*O comando FLOAT vai fazer o formulario mudar de posição dentro da div*/  
         float: right;    
-        width: 70%;        
+        width: 70%;              
+    } 
+
+    section#login > div#formulario > p{ 
+        text-align: center;
+              
     } 
 }
 
 @media screen and (min-width: 992px) {
     section#login{
-        width: 950px;
+        width: 600px;
+        height: 350px;
     }
 
     section#login > div#imagem{  
         background-image: url(../midias/imagem/chave_vertical_P.png);        
         background-size: contain;
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
      }
  
      section#login > div#formulario{ 
-         float: right;
+         float: left;
          width: 50%;
      } 
+
+     div#formulario > h1{
+        font-size: 2em;
+    }
+
+     div#formulario > p{
+        text-align: center;
+        font-size: 1em;
+        margin: 20px 0px;
+    }
 
 }
 
